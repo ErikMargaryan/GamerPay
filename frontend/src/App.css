@@ -1,0 +1,44 @@
+@keyframes colorChange {
+    0% {
+        background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    }
+    50% {
+        background: linear-gradient(45deg, #fad0c4, #a1c4fd);
+    }
+    100% {
+        background: linear-gradient(45deg, #a1c4fd, #ff9a9e);
+    }
+}
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: colorChange 10s ease infinite; /* Adjust the animation duration */
+}
+
+.centered-form {
+    width: 350px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+}
+
+.styled-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #0056b3;
+}
